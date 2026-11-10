@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filinvest Homes Butuan | Official Subdivision & Lot Showcase</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        filinvest: {
+                            blue: '#0B4A8F',
+                            darkblue: '#073366',
+                            red: '#C84B27',
+                            lightbg: '#F8F9FA',
+                            cardbg: '#EBF4FB',
+                            green: '#2D6A4F'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-overlay { background: linear-gradient(180deg, rgba(7, 51, 102, 0.75) 0%, rgba(11, 74, 143, 0.85) 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 font-body text-slate-800 antialiased">
+
+    <!-- Top Info Bar -->
+    <div class="bg-filinvest-darkblue text-slate-200 text-xs py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span>📍 Butuan City, Agusan del Norte</span>
+                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline">🏡 Master-Planned Gated Subdivision</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+639470335100" class="hover:text-amber-300 transition">📞 Sales Hotline: 09470335100</a>
+                <span>|</span>
+                <a href="#inquire" class="text-amber-300 font-semibold hover:underline">Book Site Viewing</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-filinvest-blue text-white flex items-center justify-center font-heading font-black text-xl shadow-md">
+                    ✓
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-xl sm:text-2xl text-filinvest-blue tracking-tight leading-none block">FILINVEST HOMES</span>
+                    <span class="font-heading font-bold text-xs text-filinvest-red tracking-widest uppercase block">BUTUAN</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-heading text-xs font-bold uppercase tracking-wider text-slate-700">
+                <a href="#about" class="hover:text-filinvest-blue transition">Overview</a>
+                <a href="#inventory" class="hover:text-filinvest-blue transition">Lot Inventory</a>
+                <a href="#calculator" class="hover:text-filinvest-blue transition">Payment Calculator</a>
+                <a href="#amenities" class="hover:text-filinvest-blue transition">Amenities</a>
+                <a href="#map" class="hover:text-filinvest-blue transition">Site Map</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-3">
+                <a href="#inquire" class="bg-filinvest-red hover:bg-red-700 text-white font-heading text-xs font-bold px-4 py-2.5 rounded-lg shadow transition uppercase tracking-wider">
+                    Inquire Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="relative bg-filinvest-darkblue text-white overflow-hidden min-h-[520px] flex items-center">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('1000101476_2.jpg');"></div>
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 z-10 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-amber-300 font-heading text-xs font-bold tracking-wider uppercase">
+                ✨ Inventory Update Available • November 2026
+            </div>
+            
+            <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight max-w-3xl leading-tight">
+                Your Dream Address in Butuan Starts Here
+            </h1>
+            
+            <p class="text-slate-200 text-base sm:text-lg max-w-2xl font-body leading-relaxed">
+                Experience modern suburban living in a prime, secure gated community with landscaped green parks, multi-purpose clubhouse, and flexible financing options.
+            </p>
+
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+                <a href="#inventory" class="bg-filinvest-red hover:bg-red-700 text-white font-heading font-bold text-sm px-6 py-3.5 rounded-xl shadow-lg transition">
+                    Explore Available Lots
+                </a>
+                <a href="#calculator" class="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-heading font-semibold text-sm px-6 py-3.5 rounded-xl border border-white/30 transition">
+                    Calculate Monthly Payment
+                </a>
+            </div>
+
+            <!-- Key Quick Stats -->
+            <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl border-t border-white/15">
+                <div>
+                    <span class="block font-heading font-extrabold text-2xl text-amber-300">8% OFF</span>
+                    <span class="text-xs text-slate-300">Spot Cash Discount</span>
+                </div>
+                <div>
+                    <span class="block font-heading font-extrabold text-2xl text-white">143 - 314m²</span>
+                    <span class="text-xs text-slate-300">Available Lot Sizes</span>
+                </div>
+                <div>
+                    <span class="block font-heading font-extrabold text-2xl text-white">20 Years</span>
+                    <span class="text-xs text-slate-300">Flexible Bank Loan Terms</span>
+                </div>
+                <div>
+                    <span class="block font-heading font-extrabold text-2xl text-amber-300">₱20,000</span>
+                    <span class="text-xs text-slate-300">Low Reservation Fee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lot Inventory Section -->
+    <section id="inventory" class="py-16 bg-slate-100 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-wrap justify-between items-end gap-4">
+                <div>
+                    <span class="font-heading font-bold text-xs text-filinvest-red uppercase tracking-widest">Real-Time Inventory</span>
+                    <h2 class="font-heading font-extrabold text-3xl text-slate-900 tracking-tight">Available Lots for Sale</h2>
+                    <p class="text-slate-600 text-sm mt-1">Select a lot to view full pricing details or calculate sample bank terms.</p>
+                </div>
+                
+                <div class="flex flex-wrap items-center gap-2">
+                    <input type="text" id="searchInput" onkeyup="filterInventory()" placeholder="Search Block or Lot..." class="px-3.5 py-2 text-xs border border-slate-300 rounded-lg shadow-sm focus:outline-none focus:border-filinvest-blue">
+                    <button onclick="setPriceFilter('all')" class="filter-btn active bg-filinvest-blue text-white px-3.5 py-2 text-xs font-heading font-bold rounded-lg transition" data-filter="all">All Lots</button>
+                    <button onclick="setPriceFilter('under3m')" class="filter-btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-3.5 py-2 text-xs font-heading font-semibold rounded-lg transition" data-filter="under3m">Under ₱3M</button>
+                    <button onclick="setPriceFilter('3m5m')" class="filter-btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-3.5 py-2 text-xs font-heading font-semibold rounded-lg transition" data-filter="3m5m">₱3M - ₱5M</button>
+                    <button onclick="setPriceFilter('5mplus')" class="filter-btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-3.5 py-2 text-xs font-heading font-semibold rounded-lg transition" data-filter="5mplus">₱5M+</button>
+                </div>
+            </div>
+
+            <div id="inventoryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+    </section>
+
+    <!-- Amortization Calculator Section -->
+    <section id="calculator" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="font-heading font-bold text-xs text-filinvest-red uppercase tracking-widest">Financial Planning</span>
+                <h2 class="font-heading font-extrabold text-3xl text-slate-900 tracking-tight">Interactive Amortization Calculator</h2>
+                <p class="text-slate-600 text-sm">Estimate your spot cash savings, deferred cash schedules, and 20-year bank financing monthly payments.</p>
+            </div>
+
+            <div class="bg-filinvest-cardbg rounded-2xl border border-sky-200 p-6 sm:p-10 shadow-lg grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-6 space-y-5">
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Select Lot Preset</label>
+                        <select id="calcPreset" onchange="applyPreset()" class="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-lg text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-filinvest-blue">
+                            <option value="2944200|143">Block 14 Lot 22 (143 sq.m.) - ₱2,944,200</option>
+                            <option value="4377900|207">Block 15 Lot 23 (207 sq.m.) - ₱4,377,900</option>
+                            <option value="5842100|295">Block 1 Lot 2 (295 sq.m.) - ₱5,842,100</option>
+                            <option value="custom">-- Custom Price Input --</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Net Total Contract Price (₱)</label>
+                        <input type="number" id="calcTcp" value="2944200" oninput="calculateAmortization()" class="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-lg text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-filinvest-blue">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Reservation Fee (₱)</label>
+                            <input type="number" id="calcResFee" value="20000" readonly class="w-full px-3.5 py-2.5 bg-slate-100 border border-slate-300 rounded-lg text-xs font-semibold text-slate-600">
+                        </div>
+                        <div>
+                            <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Downpayment %</label>
+                            <select id="calcDpPercent" onchange="calculateAmortization()" class="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-lg text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-filinvest-blue">
+                                <option value="0.20">20% Downpayment</option>
+                                <option value="0.10">10% Downpayment</option>
+                                <option value="0.30">30% Downpayment</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Bank Loan Tenure (Years)</label>
+                        <select id="calcTenure" onchange="calculateAmortization()" class="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-lg text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-filinvest-blue">
+                            <option value="20">20 Years (7.5% est. int.)</option>
+                            <option value="15">15 Years (7.5% est. int.)</option>
+                            <option value="10">10 Years (7.5% est. int.)</option>
+                            <option value="5">5 Years (7.5% est. int.)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-white rounded-xl border border-sky-100 p-6 space-y-6 shadow">
+                    <div class="border-b border-slate-100 pb-4">
+                        <span class="text-xs font-bold text-filinvest-red uppercase tracking-wider block mb-1">Bank Financing Breakdown</span>
+                        <div class="flex items-baseline justify-between">
+                            <span class="text-sm font-semibold text-slate-600">Estimated Monthly Amortization:</span>
+                            <span id="outputMonthlyAmort" class="font-heading font-extrabold text-2xl text-filinvest-blue">₱49,113.81</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-xs">
+                        <div class="flex justify-between py-1.5 border-b border-slate-100">
+                            <span class="text-slate-500">20% Downpayment Total:</span>
+                            <span id="outputDpTotal" class="font-bold text-slate-800">₱588,840.00</span>
+                        </div>
+                        <div class="flex justify-between py-1.5 border-b border-slate-100">
+                            <span class="text-slate-500">Monthly DP (12 months):</span>
+                            <span id="outputDpMonthly" class="font-bold text-filinvest-red">₱49,070.00 / mo</span>
+                        </div>
+                        <div class="flex justify-between py-1.5 border-b border-slate-100">
+                            <span class="text-slate-500">Remaining Balance for Bank Loan:</span>
+                            <span id="outputLoanBalance" class="font-bold text-slate-800">₱2,355,360.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 rounded-lg p-4 border border-amber-200 space-y-2">
+                        <h4 class="font-heading font-bold text-xs text-amber-900 uppercase">⚡ Alternative Payment Savings</h4>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-amber-800">Spot Cash (8% Discount):</span>
+                            <span id="outputSpotCash" class="font-bold text-amber-900">₱2,707,100.00</span>
+                        </div>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-amber-800">30-Day Cash (5% Discount):</span>
+                            <span id="output30DayCash" class="font-bold text-amber-900">₱2,796,000.00</span>
+                        </div>
+                    </div>
+
+                    <a href="#inquire" class="block text-center bg-filinvest-blue hover:bg-filinvest-darkblue text-white font-heading font-bold text-xs py-3 rounded-lg shadow transition uppercase tracking-wider">
+                        Request Official Computation Sheet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-16 bg-slate-100 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="font-heading font-bold text-xs text-filinvest-red uppercase tracking-widest">Community Lifestyle</span>
+                <h2 class="font-heading font-extrabold text-3xl text-slate-900 tracking-tight">World-Class Amenities</h2>
+                <p class="text-slate-600 text-sm">Designed for family relaxation, active recreation, and peace of mind.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200 group hover:shadow-lg transition">
+                    <img src="5718.webp" alt="Covered Basketball Court" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/073366/FFFFFF?text=Covered+Basketball+Court';">
+                    <div class="p-4 space-y-1">
+                        <h3 class="font-heading font-bold text-base text-slate-900">Covered Basketball Court</h3>
+                        <p class="text-xs text-slate-500">All-weather covered sports court for basketball, events, and community activities.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200 group hover:shadow-lg transition">
+                    <img src="6084.jpg" alt="Swimming Pool" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0B4A8F/FFFFFF?text=Swimming+Pool';">
+                    <div class="p-4 space-y-1">
+                        <h3 class="font-heading font-bold text-base text-slate-900">Community Swimming Pool</h3>
+                        <p class="text-xs text-slate-500">Refreshing adult and kiddie pool for leisure and weekend bonding.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200 group hover:shadow-lg transition">
+                    <img src="6092.jpg" alt="Multi-Purpose Clubhouse" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/2D6A4F/FFFFFF?text=Multi-Purpose+Clubhouse';">
+                    <div class="p-4 space-y-1">
+                        <h3 class="font-heading font-bold text-base text-slate-900">Multi-Purpose Clubhouse</h3>
+                        <p class="text-xs text-slate-500">Spacious pavilion for family gatherings, birthdays, and community events.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200 group hover:shadow-lg transition">
+                    <img src="6079.jpg" alt="Children's Park & Playground" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/C84B27/FFFFFF?text=Parks+%26+Playground';">
+                    <div class="p-4 space-y-1">
+                        <h3 class="font-heading font-bold text-base text-slate-900">Children's Park & Playground</h3>
+                        <p class="text-xs text-slate-500">Safe, green open space dedicated for outdoor play and sports.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-slate-200 group hover:shadow-lg transition md:col-span-2 lg:col-span-2">
+                    <img src="1000101476_2.jpg" alt="Entrance Gate" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/073366/FFFFFF?text=Gated+Entrance+Guardhouse';">
+                    <div class="p-4 space-y-1">
+                        <h3 class="font-heading font-bold text-base text-slate-900">Gated Entrance Guardhouse & 24/7 Security</h3>
+                        <p class="text-xs text-slate-500">Grand entrance gate with 24-hour security control, CCTV monitoring, and perimeter fencing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-wrap justify-between items-end gap-4">
+                <div>
+                    <span class="font-heading font-bold text-xs text-filinvest-red uppercase tracking-widest">Master Plan</span>
+                    <h2 class="font-heading font-extrabold text-3xl text-slate-900 tracking-tight">Official Subdivision Inventory Map</h2>
+                    <p class="text-slate-600 text-sm mt-1">Highlighted sections in pink indicate lots currently open for sale.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-4 text-xs font-semibold">
+                    <button onclick="openMapModal()" class="bg-filinvest-blue hover:bg-filinvest-darkblue text-white font-heading font-bold px-4 py-2 rounded-lg shadow transition flex items-center gap-1.5">
+                        🔍 View Full Map Zoom
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-6 overflow-hidden shadow-inner relative group cursor-pointer" onclick="openMapModal()">
+                <img id="mainMapImage" src="1000101470_2.jpg" alt="Filinvest Homes Butuan Inventory Map" class="w-full h-auto rounded-xl max-h-[600px] object-contain mx-auto shadow-sm" onerror="this.onerror=null; this.src='https://placehold.co/1200x650/073366/FFFFFF?text=Filinvest+Homes+Butuan+Inventory+Map';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Inquiry Form Section -->
+    <section id="inquire" class="py-16 bg-filinvest-darkblue text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="text-center space-y-2">
+                <span class="bg-filinvest-red text-white text-xs font-heading font-bold px-3 py-1 rounded-full uppercase tracking-wider">Book a Viewing</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl tracking-tight">Request Sample Computation & Viewing</h2>
+                <p class="text-slate-300 text-sm">Send us a message and our accredited Filinvest property specialists will assist you immediately.</p>
+            </div>
+
+            <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="bg-white text-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-4">
+                <div id="formSuccessMessage" class="hidden p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs rounded-lg font-semibold text-center">
+                    ✅ Thank you! Your inquiry has been submitted. A property consultant will contact you shortly at 09470335100.
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Full Name *</label>
+                        <input type="text" name="name" required placeholder="e.g. Maria Santos" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-filinvest-blue">
+                    </div>
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Contact Number *</label>
+                        <input type="tel" name="phone" required placeholder="09470335100" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-filinvest-blue">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Email Address</label>
+                        <input type="email" name="email" placeholder="maria@example.com" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-filinvest-blue">
+                    </div>
+                    <div>
+                        <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Interested Block / Lot</label>
+                        <input type="text" name="lot" placeholder="e.g. Block 14 Lot 22" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-filinvest-blue">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-heading font-bold text-xs text-slate-700 uppercase mb-1">Your Message or Preferred Schedule</label>
+                    <textarea name="message" rows="3" placeholder="I would like to request a site viewing schedule and bank computation..." class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-filinvest-blue"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="w-full bg-filinvest-red hover:bg-red-700 text-white font-heading font-bold text-sm py-3.5 rounded-xl shadow-lg transition uppercase tracking-wider">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-1">
+            <p>© 2026 Filinvest Land, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        const inventory = [
+            { block: "Block 14", lot: "Lot 22", area: 143, tcp: 2944200, resFee: 20000, spotCash: 2707100, monthlyDp: 49396.67, monthlyAmort: 49113.81 },
+            { block: "Block 15", lot: "Lot 15", area: 143, tcp: 2563000, resFee: 20000, spotCash: 2356400, monthlyDp: 42830.00, monthlyAmort: 42797.85 },
+            { block: "Block 15", lot: "Lot 23", area: 207, tcp: 4377900, resFee: 20000, spotCash: 4026100, monthlyDp: 74138.33, monthlyAmort: 72910.88 },
+            { block: "Block 1", lot: "Lot 2", area: 295, tcp: 5842100, resFee: 20000, spotCash: 5373100, monthlyDp: 99375.00, monthlyAmort: 97184.05 },
+            { block: "Block 1", lot: "Lot 3", area: 314, tcp: 6206200, resFee: 20000, spotCash: 5708100, monthlyDp: 105650.00, monthlyAmort: 103219.48 }
+        ];
+
+        let activeFilter = 'all';
+
+        function renderInventory(items) {
+            const grid = document.getElementById('inventoryGrid');
+            grid.innerHTML = '';
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-xl shadow border border-slate-200 p-4 space-y-3";
+                card.innerHTML = `
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-heading font-bold text-slate-800">${item.block} - ${item.lot}</span>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">${item.area} sq.m.</span>
+                    </div>
+                    <div class="text-xs space-y-1">
+                        <div class="flex justify-between"><span class="text-slate-500">Total Price:</span><span class="font-bold text-slate-900">₱${item.tcp.toLocaleString()}</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">Est. 20Y Amort:</span><span class="font-bold text-filinvest-red">₱${item.monthlyAmort.toLocaleString()}/mo</span></div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Paste your Google Apps Script Web App URL below between the quotes
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxCgNAMVwX4-jzkVQUx0kWBonzn3bN4H9_qiTtYpByIyua9kVRLHPmDBnh6j8-jOif4/exec";
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('formSuccessMessage');
+
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Submitting...";
+
+            if (GOOGLE_SCRIPT_URL !== "") {
+                fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    body: new FormData(e.target)
+                }).finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Submit Inquiry";
+                    successMsg.classList.remove('hidden');
+                    e.target.reset();
+                });
+            } else {
+                // If script URL is not pasted yet, show success feedback for testing
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Submit Inquiry";
+                    successMsg.classList.remove('hidden');
+                    e.target.reset();
+                }, 800);
+            }
+        }
+
+        function filterInventory() {
+            renderInventory(inventory);
+        }
+
+        function calculateAmortization() {}
+
+        window.onload = function() {
+            renderInventory(inventory);
+        };
+    </script>
+</body>
+</html>
